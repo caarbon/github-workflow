@@ -6,7 +6,7 @@ github-workflow
 All branches should be prefixed with one of the following
 
 ```
-- features/   // feature / story
+- feature/    // feature / story
 - fix/        // bug fix
 - misc/       // anything that doesn't fit the above
 ```
