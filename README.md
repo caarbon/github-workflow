@@ -31,9 +31,4 @@ All branches should be prefixed with one of the following
 ```
 
 ### Milestones
-
-```
-- ___Icebox
-- __Backlog
-- _[Week x Sprint]
-```
+Used for major release milestone
