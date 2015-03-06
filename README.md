@@ -3,7 +3,9 @@ github-workflow
 
 ## Branching Model
 
-All development repos should use the default branch of `develop`. Pull requests should be branches off of `develop`.
+For repos that do not have separate environments (like this one) you should branch off of, and open pull requests into, `master`.
+
+For repos which involves releases per environment, the default branch will be `develop`. Pull requests should be branches off of `develop`.
 
 ```
 - `develop`     // master development branch
