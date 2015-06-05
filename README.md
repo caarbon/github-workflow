@@ -3,7 +3,15 @@ github-workflow
 
 ## Branching Model
 
-All development repos should use the default branch of `develop`. Pull requests should be branches off of `develop`.
+There are two types of branching models. Which to use depends on the purpose of the repo.
+
+### General Repos
+
+If the repo is for general purposes, is a module or a pod, then it should follow the standard default of using `master` as the main branch. And changes should be committed on branches off of master, and then merged back in through pull requests.
+
+### Production Repos
+
+All repos that will deploy to production servers or be released as binaries should use the default branch of `develop`. Pull requests should be branches off of `develop`.
 
 ```
 - `develop`     // master development branch
@@ -17,7 +25,7 @@ For example, if you hotfixed `staging`, once the changes are in `staging` then `
 
 ## PR Branches
 
-All development branches should be prefixed with one of the following
+All development branches, regardless of repo type, should be prefixed with one of the following
 
 ```
 - feature/      // feature / story
@@ -28,16 +36,16 @@ All development branches should be prefixed with one of the following
 ## Labels
 
 ```
-- ☆ EPIC      // this feature is very big, has multiple smaller issues
-- ♨︎ TBD       // this feature is yet to be finalized
-- ♺ WIP       // somebody is shipping this
-- ❝what if…❞  // the common question to ask when you have an idea
-- reaped      // this issues has been closed due to being stale
+- `☆ EPIC`      // this feature is very big, has multiple smaller issues
+- `♨︎ TBD`       // this feature is yet to be finalized
+- `♺ WIP`       // somebody is shipping this
+- `❝what if…❞`  // the common question to ask when you have an idea
+- `reaped`      // this issues has been closed due to being stale
 
 // bug priorities
-- `P0`        // critical bug, drop everything and fix it
-- `P1`        // severe bug, must be fixed
-- `P2`        // general bug, should be fixed, prioritize accordingly
+- `P0`          // critical bug, drop everything and fix it
+- `P1`          // severe bug, must be fixed
+- `P2`          // general bug, should be fixed, prioritize accordingly
 
 // github default's 
 - `bug`
@@ -48,6 +56,3 @@ All development branches should be prefixed with one of the following
 - `question`
 - `wontfix`
 ```
-
-### Milestones
-Used for major release milestone
